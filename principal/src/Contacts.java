@@ -15,20 +15,30 @@ public class Contacts {
         this.company = c;
     }
 
-    public void addContact(){
-//Função
+    public Contacts addContact(int id, String n, String j, String p, String e, Company c){
+        Contacts newContact = new Contacts(id, n, j, p, e, c);
+        return newContact;
     }
 
-    public void updateContact(){
-//Função
+    public void updateContact(String n, String j, String p, String e, Company c){
+        this.name = n;
+        this.job = j;
+        this.phone = p;
+        this.email = e;
+        this.company = c;
     }
 
     public void deleteContact(){
-//Função
+        this.idContacts = -1;
+        this.name = null;
+        this.job = null;
+        this.phone = null;
+        this.email = null;
+        this.company = null;
     }
 
     public void showContact(){
-//Função
+        System.out.println(this.idContacts + this.name + this.email + this.job + this.phone + this.company);
     }
 
     public int getIdContacts() {
