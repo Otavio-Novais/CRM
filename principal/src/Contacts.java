@@ -4,9 +4,9 @@ public class Contacts {
     private String job;
     private String phone;
     private String email;
-    private String company;
+    private Company company;
 
-    private Contacts(int id, String n, String j, String p, String e, String c){
+    private Contacts(int id, String n, String j, String p, String e, Company c){
         this.idContacts = id;
         this.name = n;
         this.job = j;
@@ -29,5 +29,53 @@ public class Contacts {
 
     public void showContact(){
 //Função
+    }
+
+    public int getIdContacts() {
+        return idContacts;
+    }
+
+    public void setIdContacts(int idContacts) {
+        this.idContacts = idContacts;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }
