@@ -1,9 +1,4 @@
-public class main {
-    //Code
-
-}
-
-class Contacts{
+public class Contacts {
     private int idContacts;
     private String name;
     private String job;
@@ -21,7 +16,7 @@ class Contacts{
     }
 
     public void addContact(){
-//Função 
+//Função
     }
 
     public void updateContact(){
