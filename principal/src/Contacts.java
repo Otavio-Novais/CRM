@@ -38,7 +38,7 @@ public class Contacts {
     }
 
     public void showContact(){
-        System.out.println(this.idContacts + this.name + this.email + this.job + this.phone + this.company);
+        System.out.println("Id: " + this.idContacts + "Nome: " + this.name + "Email: " + this.email + "Job: " + this.job + "Celular: " + this.phone + "Companhia: "+ this.company);
     }
 
     public int getIdContacts() {
