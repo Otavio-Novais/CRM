@@ -1,3 +1,6 @@
+//Todas as funções são de responsabilidade única, respeitam demeter
+// Além de que respeita os conceitos de aberto/fechado;
+
 public class Company {
     private int idCompany;
     private String name;

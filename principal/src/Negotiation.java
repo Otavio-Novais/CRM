@@ -1,5 +1,8 @@
 import java.util.Date;
 
+//Todas as funções são de responsabilidade única, respeitam demeter
+// Além de que respeita os conceitos de aberto/fechado e a substituição de Liskov
+
 public class Negotiation {
     private int idNegotiation;
     private Date date;
@@ -19,6 +22,7 @@ public class Negotiation {
         this.observation = observation;
     }
 
+    
     public Negotiation addNegotiation(int idNegotiation, Date date, Double value, String status, Contacts contacts, String productService, String observation){
         Negotiation newNegotiation = new Negotiation(idNegotiation, date, value, status, contacts, productService, observation);
         return newNegotiation;

@@ -1,5 +1,9 @@
 import java.util.Date;
 
+//Todas as funções são de responsabilidade única, respeitam demeter
+// Além de que respeita os conceitos de aberto/fechado e a substituição de Liskov
+
+
 public class NegotiationPublic extends Negotiation {
 
 private float taxPublic;
@@ -10,7 +14,12 @@ private float taxPublic;
         this.taxPublic = tax;
     }
 
-    public void closeNegotiation(){
+    public void CloseNegotiation(){
         this.closeNegotiation();
     }
+
+    public float getTax(){
+        return this.taxPublic;
+    }
+
 }
