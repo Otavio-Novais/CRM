@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Negotiation {
     private int idNegotiation;
@@ -17,6 +18,42 @@ public class Negotiation {
         this.contacts = contacts;
         this.productService = productService;
         this.observation = observation;
+    }
+
+    public Negotiation addNegotiation(int idNegotiation, Date date, Double value, String status, Contacts contacts, String productService, String observation){
+        Negotiation newNegotiation = new Negotiation(idNegotiation, date, value, status, contacts, productService, observation);
+        return newNegotiation;
+    }
+
+    public void updateNegotiation(Date date, Double value, String status, Contacts contacts, String productService, String observation){
+        this.date = date;
+        this.value = value;
+        this.status = status;
+        this.contacts = contacts;
+        this.productService = productService;
+        this.observation = observation;
+    }
+
+    public void deleteNegotiation(){
+        this.idNegotiation = -1;
+        this.date = null;
+        this.value = -1.0;
+        this.status = null;
+        this.contacts = null;
+        this.productService = null;
+        this.observation = null;
+    } 
+
+    public void showNegotiation(){
+        System.out.println("Id: " + this.idNegotiation + "date: " + this.date + "value: " + this.value + "status: " + this.status + "productService: " + this.productService + "Observação: " + this.observation);
+    }
+
+    public void updateObservation(String s){
+        this.observation = s;
+    }
+
+    public void closeNegotiation(){
+        this.status = "closed";
     }
 
     public int getIdNegotiation() {

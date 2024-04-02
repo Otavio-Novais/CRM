@@ -9,7 +9,26 @@ public class Company {
         this.segment = segment;
     }
 
-//    Adicionar métodos
+    public Company addCompany(int idCompany, String name, String segment){
+        Company newCompany = new Company(idCompany, name, segment);
+        return newCompany;
+    }
+
+    public void updateCompany(String name, String segment){
+        this.name = name;
+        this.segment = segment;
+    }
+
+    public void deleteCompany() {
+        this.idCompany = -1;
+        this.name = null;
+        this.segment = null;
+    }
+
+    public void showCompany(){
+        System.out.println("Id: " + this.idCompany + "Nome: " +this.name + "Segmento: " + this.segment);
+    }
+
 
     public int getIdCompany() {
         return idCompany;
